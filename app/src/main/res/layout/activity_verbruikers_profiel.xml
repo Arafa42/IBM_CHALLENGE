@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpap"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout"
+        >
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:id="@+id/btnUpDirectory"
+            android:text="Back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btnbg"
+            android:layout_marginStart="15dp" />
+
+        <Button
+            android:layout_marginRight="15dp"
+            android:id="@+id/btnViewSDCard"
+            android:text="Memory"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btnbg"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+
+        <Button
+            android:id="@+id/vpGraph"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginEnd="58dp"
+            android:enabled="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btnbg"
+            android:layout_marginRight="58dp"
+            android:layout_toStartOf="@+id/btnViewSDCard"
+            android:layout_toLeftOf="@+id/btnViewSDCard"
+            android:layout_toEndOf="@+id/btnUpDirectory"
+            android:layout_toRightOf="@+id/btnUpDirectory"
+            android:text="Graph" />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_below="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvInternalStorage" />
+
+
+</RelativeLayout>

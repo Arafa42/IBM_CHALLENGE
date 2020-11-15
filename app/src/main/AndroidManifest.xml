@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.nfc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="LockedOrientationActivity">
+        <activity android:name=".SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".changePin"
+            android:label="Change pincode"
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerbruikersProfielGrafiek"
+            android:parentActivityName=".VerbruikersProfiel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerbruikersProfiel"
+            android:parentActivityName=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NuclearEnergyYear"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NuclearEnergyWeek"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GasEnergyYear"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GasEnergyWeek"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WaterEnergyYear"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WaterEnergyWeek"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReservationConfirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReserveMenu"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WindEnergyYear"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WindEnergyWeek"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMoneyConfirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChoosePayment"
+            android:parentActivityName=".PaymentMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NfcReader"
+            android:parentActivityName=".ChoosePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationSettings"
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentConfirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentMenu"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MeritOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nuclear_energie_chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wind_energie_chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gas_energie_chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".water_energie_chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

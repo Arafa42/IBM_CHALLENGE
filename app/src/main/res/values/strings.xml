@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NFC BEURS</string>
+    <string name="login">Login</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="first_name_reg">First Name</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="phone">Phone</string>
+    <string name="last_name_reg">Last Name</string>
+    <string name="password123">password123</string>
+    <string name="first_name_profile">First Name</string>
+    <string name="_0412345678">0412345678</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="last_name_profile">Last Name</string>
+    <string name="confirm_registration">CONFIRM REGISTRATION</string>
+    <string name="enter_password">Enter a passcode of 4 digits</string>
+    <string name="old_password">Old password:</string>
+    <string name="new_password">New password:</string>
+    <string name="confirm_new_password">Confirm new password:</string>
+    <string name="change_password">Change password</string>
+    <string name="cancel">Cancel</string>
+</resources>
